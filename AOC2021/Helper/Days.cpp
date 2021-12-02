@@ -11,5 +11,7 @@ Days::~Days() {
 }
 
 void Days::setInput(std::vector<std::string> input) {
+
 	day_input = input;
+
 }
