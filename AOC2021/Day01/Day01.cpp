@@ -3,8 +3,9 @@
 using namespace aoc::days;
 
 void Day01::setInput(std::vector<std::string> input) {
-	for each (std::string str in input)
+	for (int i = 0; i < input.size(); i++)
 	{
+		std::string str = input[i];
 		day_input.push_back(std::stoi(str));
 	}
 }
