@@ -13,8 +13,9 @@ std::string Day01::solvePart1() {
 	int last_number = -1;
 	int counter = 0;
 
-	for each (int i in day_input)
+	for (int num = 0; num < day_input.size(); num++)
 	{
+		int i = day_input[num];
 		if (last_number == -1) {
 			last_number = i;
 			continue;

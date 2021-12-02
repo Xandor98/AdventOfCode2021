@@ -1,13 +1,15 @@
 #include "Days.h"
 
-::aoc::days::Days::Days() {
+using namespace aoc::days;
+
+Days::Days() {
 
 }
 
-::aoc::days::Days::~Days() {
+Days::~Days() {
 
 }
 
-void ::aoc::days::Days::setInput(std::vector<std::string> input) {
+void Days::setInput(std::vector<std::string> input) {
 	day_input = input;
 }
