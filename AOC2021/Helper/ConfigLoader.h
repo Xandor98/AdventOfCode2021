@@ -2,7 +2,6 @@
 
 #include <fstream>
 #include <map>
-#include <windows.h>
 #include <Shlobj.h>
 
 #include <iostream>
