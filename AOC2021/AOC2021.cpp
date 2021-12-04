@@ -2,15 +2,25 @@
 //
 
 #include "AOC2021.h"
+#include "ConfigLoader.h"
 
 using namespace std;
 using namespace aoc::days;
+using namespace aoc::helper;
 
 int main()
 {
 	string line;
-	ifstream myfile("C:/Users/cevvo/Workspace/AOC2021/AOC2021/resources/Day01_in.txt");
-	
+
+    Config &conf = Config::getInstance();
+
+    if (!conf.settignExist("pathToResource")) {
+        std::cout << "No Resource Setting Found" << std::endl;
+        return 1;
+    }
+
+	ifstream myfile(conf.get("pathToResource") + "/Day01_in.txt");
+
 	std::vector<std::string> lines;
 
     if (myfile.is_open()) {
